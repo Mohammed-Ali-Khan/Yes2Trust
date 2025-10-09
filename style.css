@@ -19,7 +19,7 @@
     text-align: center;
     font-size: 2em;
     font-weight: 700;
-    color: #03a11e;
+    color: #14452F;
     font-size: 2.8em;
     font-family: 'Montserrat', Arial, sans-serif;
 }
@@ -52,7 +52,7 @@ body {
     color: #222;
 }
 nav {
-    background: #014907;
+    background: #14452F;
     padding: 1em 0;
 }
 nav ul {
@@ -112,7 +112,7 @@ section {
 footer {
     text-align: center;
     padding: 1em 0;
-    background: #014907;
+    background: #14452F;
     color: #fff;
     margin-top: 2em;
         border-radius: 0 0 8px 8px;
