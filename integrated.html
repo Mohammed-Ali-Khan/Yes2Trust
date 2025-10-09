@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yes2Trust Ltd</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <style>
+/* Header styles */
+.site-header {
+    width: 100%;
+    background: #fff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    padding: 0.5em 0 0.5em 0;
+    margin-bottom: 0.5em;
+}
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    max-width: 900px;
+    margin: 0 auto;
+}
+.company-name {
+    flex: 1;
+    text-align: center;
+    font-size: 2em;
+    font-weight: 700;
+    color: #03a11e;
+    font-size: 2.8em;
+    font-family: 'Montserrat', Arial, sans-serif;
+}
+.logo {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 80px;
+    width: auto;
+}
+@media (max-width: 700px) {
+    .header-content {
+        flex-direction: column;
+        align-items: center;
+    }
+    .logo {
+        position: static;
+        margin-top: 0.5em;
+        transform: none;
+        height: 60px;
+    }
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f8f8f8;
+    color: #222;
+    min-height: 100vh;
+    position: relative;
+    padding-bottom: 70px; /* Height of footer */
+}
+nav {
+    background: #014907;
+    padding: 1em 0;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+nav ul li {
+    margin: 0 1.5em;
+}
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.5em 1em;
+    border-radius: 4px;
+    transition: background 0.2s;
+}
+nav ul li a.active {
+    background: #fff8dc;
+    color: #222;
+}
+section {
+    max-width: 900px;
+    margin: 2em auto;
+    background: #fff;
+    padding: 2em;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+.product-list {
+    display: flex;
+    gap: 2em;
+    flex-wrap: wrap;
+}
+.product {
+    background: #f0f4fa;
+    border-radius: 8px;
+    padding: 1em;
+    width: 220px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.07);
+    text-align: center;
+}
+.product img {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin-bottom: 0.5em;
+}
+.product h3 {
+    margin: 0.5em 0 0.2em 0;
+    font-size: 1.1em;
+}
+footer {
+    text-align: center;
+    padding: 1em 0;
+    background: #014907;
+    color: #fff;
+    margin-top: 2em;
+    border-radius: 0 0 8px 8px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: 100;
+}
+@media (max-width: 700px) {
+    .product-list {
+        flex-direction: column;
+        align-items: center;
+    }
+    section {
+        padding: 1em;
+    }
+    .product {
+        width: 90%;
+    }
+}
+    </style>
+</head>
+<body>
+    <header class="site-header">
+        <div class="header-content">
+            <div class="company-name">Yes2Trust</div>
+            <img src="logo.png" alt="Yes2Trust Logo" class="logo">
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#about" data-section="about">About</a></li>
+            <li><a href="#products" data-section="products">Products</a></li>
+            <li><a href="#contact" data-section="contact">Contact Us</a></li>
+        </ul>
+    </nav>
+    <section id="about" style="display:none;">
+        <h1>About Yes2Trust Ltd</h1>
+        <p>Yes2Trust Ltd is a new online retail reseller company selling quality products on Amazon and Ebay. Our business is located in Ontario, Canada.</p>
+        <p>We offer a wide variety of products, ranging from electronics and home goods to fashion and accessories. Our catalog is always growing to meet the diverse needs of our customers.</p>
+        <p>At Yes2Trust, we are dedicated to providing the best quality products and outstanding customer service. We carefully select our products to ensure they meet high standards, and we strive to deliver a seamless shopping experience every time.</p>
+        <p>Our team is passionate about building long-term relationships with our customers. We believe in honesty, transparency, and reliability in every transaction.</p>
+        <p>We stand behind every product we sell and offer responsive support to address any questions or concerns. Your satisfaction is our top priority.</p>
+        <p>Shop with confidence at Yes2Trust, knowing that you are choosing a company that values integrity and puts customers first.</p>
+    </section>
+    <section id="products">
+        <h2>Our Products</h2>
+        <div class="product-list">
+            <!-- Example Product -->
+            <div class="product">
+                <a href="https://www.amazon.ca/Spoons-Silicone-Set-Utensils-Essentials/dp/B0F2F2RLNV/ref=sr_1_37?crid=3S4IYMOHR0AXA&dib=eyJ2IjoiMSJ9.ipMd7vmTuWwqpX4AUMUzHMB3oLrIe3rCdGCHluQFRRTRcEO1962_1-4bRRItEFJT9BHBAY-SFmdY7sJjV9YAWCZj_PT8C3RpLDA0e3BTt1e6ClGwoqMx0bbKlGx4_ETWpTJyGwV8hCNCdXMqxkn1BXR5J2yDQIe8eK9nk0BYW7yESlZd5nHzSaxSrURh9Hu8dgczoP1j8JN19ob0aqP9Z47i0kxTp32x_03Rv5VwZUZiJc5kqQHTyMIpJiNwoFwYt0Jk5aAFyu-teJ7KfUuYWfCRKmo-GEUkr0bRD0aGtjo.SD1oESDgD91zC8mySlZZ-tKVAWmN8ENKz2t8dRoLjS0&dib_tag=se&keywords=baby+spoons+self+feeding&qid=1753155773&sprefix=baby+spoons%2Caps%2C84&sr=8-37" target="_blank">
+                    <img src="product1.jpg" alt="Baby Spoons">
+                    <h3>Baby Spoons</h3>
+                </a>
+                <p>High-quality baby spoons made from safe, durable materials. Perfect for feeding your little one.</p>
+            </div>
+            <div class="product">
+                <a href="https://www.amazon.ca/Sheet-Holders-Corners-Fasteners-Straps/dp/B0F1CV364P/ref=sr_1_39?crid=2GQU5T397T1G1&dib=eyJ2IjoiMSJ9._OtR1LF2WRItD_sj8AooMK90N6nTQJ_V5s8W8pLiw9L9zT_EHu13mzrru3FKhHKg34ZjC6ubwxYgT2zut0lozrc1hMEmXipgOA_7GyH31HQZ3uS01yZHXy2zJTAEEWZMEVP_aQ3fqciFYa78Elmvd-7EYyxVQ7Uk5nbMAC4uCR-wlsbposw9Crp7syfoClgNYvTTJJ-PKOqKbwTJbXto5nPzQseOpVv5tTT08zU5uI1K9Uap4miMzg31bb6CN7rKlOGFnN5kphs0yfOBThcHAR8VcJCeosRkdcYg-SyNaIM.wjqIPp2ynbbhREDSWFcsOaQuDZO-M31CZMlFa8vlHDo&dib_tag=se&keywords=bedsheet+straps+clips+for+fitted+sheets&qid=1753155894&sprefix=bedsheet+straps+clips+for+fitted+sheets%2Caps%2C81&sr=8-39" target="_blank">
+                    <img src="product2.jpg" alt="Bedsheet Holder Straps">
+                    <h3>Bedsheet Holder Straps</h3>
+                </a>
+                <p>Keep your bedsheets in place with these durable and adjustable holder straps.</p>
+            </div>
+            <!-- Add more products as needed -->
+        </div>
+        <h3 style="margin-top:2em;text-align:center;color:#e6b800;font-family:'Montserrat',Arial,sans-serif;">New Products - coming soon</h3>
+    </section>
+    <section id="contact" style="display:none;">
+        <h2>Contact Us</h2>
+        <ul>
+            <li>Email: <a href="mailto:sales@yes2trust.ca">sales@yes2trust.ca</a></li>
+            <li>Phone: +1-902-440-5440</li>
+            <li>Address: 5 Brooklawn Ave, Scarborough, Ontario, M1M 2P3</li>
+        </ul>
+    </section>
+    <footer>
+        <p>&copy; 2025 Yes2Trust Ltd. All rights reserved.</p>
+    </footer>
+    <script>
+// Section navigation and visibility logic
+    document.addEventListener('DOMContentLoaded', function() {
+        const sections = {
+            about: document.getElementById('about'),
+            products: document.getElementById('products'),
+            contact: document.getElementById('contact')
+        };
+        function showSection(section) {
+            for (const key in sections) {
+                sections[key].style.display = (key === section) ? '' : 'none';
+            }
+            // Highlight active nav link
+            document.querySelectorAll('nav a[data-section]').forEach(link => {
+                if (link.getAttribute('data-section') === section) {
+                    link.classList.add('active');
+                } else {
+                    link.classList.remove('active');
+                }
+            });
+        }
+        // Default landing: products
+        showSection('products');
+        // Navigation click handler
+        document.querySelectorAll('nav a[data-section]').forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                const section = link.getAttribute('data-section');
+                showSection(section);
+            });
+        });
+    });
+    </script>
+</body>
+</html>
